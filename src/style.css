@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #wrapper {
+    overflow-x: hidden;
+  }
+  /* navigation bar starts */
+  #top_nav {
+    padding: 15px 40px 15px 40px;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  #top_nav > h2 {
+    margin-top: 5px;
+  }
+  
+  .right_nav li {
+    list-style: none;
+    display: inline;
+    padding: 0px 10px;
+    color: tan;
+  }
+  /* navigation bar ends */
+  /* /* banner start * */
+  #banner {
+    background-color: #eeeeee;
+    width: 100%;
+    padding: 15px 15px;
+  }
+  .banner_content {
+    width: 20%;
+    margin-left: 20px;
+  }
+  .banner_content > h2 {
+    margin-top: 3px;
+    font-size: 1.3rem;
+  }
+  .banner_content > p {
+    font-size: smaller;
+    margin: 12px 0px;
+  }
+  /* banner end */
+  /* main boxes start */
+  
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 17px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .box_item {
+    width: 200px;
+    display: flex;
+  
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #gray_color {
+    padding: 60px 0px;
+    background-color: #eeeeee;
+    width: 100%;
+    margin-bottom: 3px;
+    color: red;
+  }
+  
+  .box_item > h3 {
+    padding: 5px;
+  }
+  .box_item > p {
+    margin: 8px 10px;
+    font-size: small;
+    text-align: justify;
+  }
+  .box_item > a {
+    font-size: small;
+    padding: 5px;
+    color: pink;
+  }
+  /* main boxes end */
+  /* footer start */
+  #footer {
+    margin-top: 10px;
+    padding: 15px 0px;
+    width: 100%;
+  }
+  #subscribe_block {
+    padding: 13px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #subscribe_block > span {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0px 10px;
+  }
+  #subscribe_block > input {
+    width: 30%;
+    padding: 8px;
+    margin: 0px 10px;
+  }
+  #subscribe_block > button {
+    width: 200px;
+    padding: 10px;
+    margin: 0px 10px;
+    background-color:white;
+    border: none;
+  }
+  #subscribe_block > button > span {
+    color: blue;
+    text-align: start;
+    font-weight: bold;
+    margin-right: 70px;
+  }
+  
+  #copyright {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    justify-content: space-between;
+    font-size: small;
+  }
+  /* footer ends */
+  @media screen and (max-width: 1000px) {
+    .banner_content {
+      width: 30%;
+    }
+    .banner_content > h2 {
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .banner_content {
+      width: 50%;
+    }
+    .banner_content > h2 {
+      font-size: 1rem;
+    }
+    #subscribe_block {
+      flex-direction: column;
+    }
+    #subscribe_block > input {
+      margin: 5px;
+    }
+  }
